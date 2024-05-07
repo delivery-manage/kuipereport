@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>카이퍼항공 운관시</h1>
+    <u1>
+        <% for (comment of comments){ %>
+            <li><%= comment %></li>
+        <%    }  %> 
+     </u1>
+     </form>
+    <form action="/create" method="post">
+        <label>이메일</label>
+        <input type="text" name="email"><br><br>
+        <label>조종사 이름 (닉네임)</label>
+        <input type="text" name="nickname"><br><br>
+        <label>항공기 도장</label>
+        <input type="text" name="paint"><br><br>
+        <label>항공편 편명</label>
+        <input type="text" name="number"><br><br>
+        <label>출발 국가 (ex_대한민국)</label>
+        <input type="text" name="departcountry"><br><br>
+        <label>출발 도시 (ex_서울)</label>
+        <input type="text" name="departcity"><br><br>
+        <label>출발 공항 (ex_인천 / RKSI)</label>
+        <input type="text" name="departairport"><br><br>
+        <label>도착 국가 (ex_미국)</label>
+        <input type="text" name="arrivecountry"><br><br>
+        <label>도착 도시 (ex_뉴욕)</label>
+        <input type="text" name="arrivecity"><br><br>
+        <label>도착 공항 (ex_존 F. 케네디 / KJFK)</label>
+        <input type="text" name="arriveairport"><br><br>
+        <label>출발 날짜</label>
+        <input type="date" name="departdate"><br><br>
+        <label>출발 시간</label>
+        <input type="time" name="departtime"><br><br>
+        <label>도착 날짜</label>
+        <input type="date" name="arrivedate"><br><br>
+        <label>도착 시간</label>
+        <input type="time" name="arrivetime"><br><br>
+        <label>운항 시간 (ex. 13h 00m)</label>
+        <input type="text" name="time"><br><br>
+        <label>탑승 인원 수</label>
+        <input type="text" name="people"><br><br>
+        <label>화물 무게 (kg)</label>
+        <input type="text" name="bagagge"><br><br>
+        <label>전체 하중 (kg)</label>
+        <input type="text" name="weight"><br><br>
+        <label>탑재 연료 및 소비 연료량 (kg)</label>
+        <input type="text" name="fuel"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </body>
+</html>
