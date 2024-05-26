@@ -25,11 +25,7 @@ app.get('/create', function(req, res) {
     const {nickname} = req.body
     const {paint} = req.body
     const {number} = req.body
-    const {departcountry} = req.body
-    const {departcity} = req.body
     const {departairport} = req.body
-    const {arrivecountry} = req.body
-    const {arrivecity} = req.body
     const {arriveairport} = req.body
     const {departdate} = req.body
     const {departtime} = req.body
@@ -42,7 +38,7 @@ app.get('/create', function(req, res) {
     const {auw} = req.body
     const {burningfuel} = req.body
     const gas = Number(mlw)-Number(auw)+Number(burningfuel)
-    comments.push('이메일 : '+email+', 조종사 이름 : '+nickname+', 항공기 도장 : '+paint+', 항공기 편명 : '+number+', 출발 국가 : '+departcountry+', 출발 도시 : '+departcity+', 출발 공항 : '+departairport+', 도착 국가 : '+arrivecountry+', 도착 도시 : '+arrivecity+', 도착 공항 : '+arriveairport+', 출발 날짜 : '+departdate+', 출발 시간 : '+departtime+', 도착 날짜 : '+arrivedate+', 도착 시간 : '+arrivetime+', 운항 시간 : '+time+', 탑승 인원 수 : '+people+', 화물 무게 (kg) : '+bagagge+', 총 연료량 : '+gas);
+    comments.push('이메일 : '+email+', 조종사 이름 : '+nickname+', 항공기 도장 : '+paint+', 항공기 편명 : '+number+', 출발 공항 : '+departairport+', 도착 공항 : '+arriveairport+', 출발 날짜 : '+departdate+', 출발 시간 : '+departtime+', 도착 날짜 : '+arrivedate+', 도착 시간 : '+arrivetime+', 운항 시간 : '+time+', 탑승 인원 수 : '+people+', 화물 무게 (kg) : '+bagagge+', 총 연료량 : '+gas);
     console.log(comments);
     res.redirect('/')
   });
