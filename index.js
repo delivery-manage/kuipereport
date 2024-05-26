@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 443;
 let comments = [];
 
 app.use(express.json())
@@ -47,5 +47,5 @@ app.get('/create', function(req, res) {
     console.log(comments);
     res.redirect('/')
   });
-app.listen(3000);
-console.log('Server is listening on port 3000');
+app.listen(443);
+console.log('Server is listening on port 443');
