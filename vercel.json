@@ -7,6 +7,6 @@
       { "src": "/(.*)", "dest": "server.js" }
     ],
     "env": {
-      "PORT": 443
+      "PORT": "3000"
     }
   }
