@@ -7,12 +7,6 @@
 </head>
 <body>
     <h1>카이퍼항공 운관시</h1>
-    <u1>
-        <% for (comment of comments){ %>
-            <li><%= comment %></li>
-        <%    }  %> 
-     </u1>
-     </form>
     <form action="/create" method="post">
         <label>이메일</label>
         <input type="text" name="email"><br><br>
@@ -54,5 +48,10 @@
         <input type="text" name="fuel"><br><br>
         <input type="submit" value="Submit">
       </form>
+      <u1>
+        <% for (comment of comments){ %>
+            <li><%= comment %></li>
+        <%    }  %> 
+     </u1>
     </body>
 </html>
